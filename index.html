@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Of Eternity</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/magnific-popup/magnific-popup.css" />
+
+   
+    <script src="/src/script.js" defer></script>
+   
+
+    
+  </head>
+  <body>
+    <nav class="bg-purple">
+      <div class="flex justify-between items-center lg:mx-20">
+        <!-- img -->
+        <div class="p-6 z-50">
+          <a href="/index.html"
+            ><img
+              src="/img/logo-removebg-preview.png"
+              class="h-[50px]"
+              alt="logo"
+          /></a>
+        </div>
+
+        <!-- nav items -->
+        <div class="lg:flex space-x-10 items-center hidden">
+          <ul class="flex space-x-4 text-white">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/sermons.html">Sermons</a></li>
+            <li><a href="/about-us.html">About Us</a></li>
+            <li><a href="/contact-us.html">Contact Us</a></li>
+          </ul>
+          <a href="" class="bg-white px-4 py-2 rounded-md">Join Us</a>
+        </div>
+
+        <!-- Hamburger Button -->
+        <div class="lg:hidden mr-10">
+          <button
+            id="menu-btn"
+            type="button"
+            class="z-40 block hamburger lg:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+        >
+          <a href="/index.html" class="hover:text-blue-500">Home</a>
+          <a href="/sermons.html" class="hover:text-blue-500">Sermons</a>
+          <a href="/about-us.html" class="hover:text-blue-500">About Us</a>
+          <a href="/contact-us.html" class="hover:text-blue-500">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section
+      class="bg-hero-pattern bg-cover bg-no-repeat bg-center h-[65vh] lg:h-[75vh]"
+    >
+      <div class="h-[65vh] bg-rect lg:h-[75vh]">
+        <div
+          class="flex flex-col items-center justify-center lg:items-start lg:container lg:pl-40 lg:mx-auto h-[60vh] lg:h-[70vh]"
+        >
+          <div
+            class="space-y-2 text-center lg:text-left text-white lg:w-[700px]"
+          >
+            <h6 class="uppercase text-xl lg:text-2xl">Welcome to</h6>
+            <h1 class="uppercase font-bold text-5xl lg:text-[4.5rem]">
+              City of Eternity Church
+            </h1>
+          </div>
+          <h6
+            class="font-light text-xl lg:text-2xl uppercase lg:font-normal text-white mt-2"
+          >
+            Bringing Eternal Verities to You
+          </h6>
+
+         
+          <a
+            href="/img/jonathan-borba-Z39a7lqZusU-unsplash.png"
+            class="test-popup-link flex space-x-5 bg-purple px-4 py-2 lg:px-5 lg:py-3 mt-8 rounded-md"
+            ><span class="text-lg uppercase text-white">Watch Our Sermons</span
+            ><svg
+              width="30"
+              height="30"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 1.5625C6.45996 1.5625 1.5625 6.45996 1.5625 12.5C1.5625 18.54 6.45996 23.4375 12.5 23.4375C18.54 23.4375 23.4375 18.54 23.4375 12.5C23.4375 6.45996 18.54 1.5625 12.5 1.5625ZM16.0181 12.6685L10.686 16.5479C10.6568 16.5689 10.6223 16.5814 10.5865 16.5841C10.5506 16.5868 10.5146 16.5795 10.4826 16.5631C10.4505 16.5467 10.4236 16.5218 10.4048 16.4911C10.386 16.4604 10.376 16.4252 10.376 16.3892V8.63525C10.3759 8.59919 10.3857 8.56379 10.4045 8.53299C10.4233 8.50219 10.4502 8.47718 10.4823 8.46075C10.5144 8.44432 10.5504 8.4371 10.5864 8.43989C10.6224 8.44268 10.6568 8.45537 10.686 8.47656L16.0181 12.3535C16.0433 12.3713 16.0638 12.3949 16.078 12.4223C16.0922 12.4497 16.0996 12.4801 16.0996 12.511C16.0996 12.5418 16.0922 12.5722 16.078 12.5996C16.0638 12.627 16.0433 12.6506 16.0181 12.6685Z"
+                fill="white"
+              /></svg
+          ></a> 
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Meetings -->
+    <section>
+      <div class="lg:mx-20">
+        <!-- Our Meetings & Bottom Bar -->
+        <div class="flex flex-col items-center mt-6 space-y-2">
+          <h1 class="text-4xl text-purple font-bold">Our Meetings</h1>
+          <div class="bg-purple w-[90px] h-[5px]"></div>
+        </div>
+
+        <!-- Meetings Cards -->
+        <div
+          class="flex flex-col lg:flex-row mt-5 items-center space-y-5 lg:space-y-0 lg:space-x-4"
+        >
+          <!-- Card 1 -->
+          <div
+            class="flex flex-col bg-meeting-prayer rounded-lg justify-between text-white p-6 h-[380px] w-[480px] lg:w-1/3 bg-cover bg-no-repeat bg-center"
+          >
+            <h2 class="text-3xl font-bold">Tuesdays</h2>
+            <div class="flex justify-between items-center">
+              <p class="text-lg font-semibold">
+                Prayer Cruise from <br />6pm to 7pm
+              </p>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.8438 9.11719C18.4948 9.60547 18.4948 10.3984 17.8438 10.8867L7.84375 18.3867C7.19271 18.875 6.13542 18.875 5.48438 18.3867C4.83333 17.8984 4.83333 17.1055 5.48438 16.6172L14.3073 10L5.48958 3.38281C4.83854 2.89453 4.83854 2.10156 5.48958 1.61328C6.14062 1.125 7.19792 1.125 7.84896 1.61328L17.849 9.11328L17.8438 9.11719Z"
+                  fill="#FFFCFC"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col bg-meeting-friday rounded-lg justify-between text-white p-6 h-[380px] w-[480px] lg:w-1/3 bg-cover bg-no-repeat bg-center"
+          >
+            <h2 class="text-3xl font-bold">Fridays</h2>
+            <div class="flex justify-between items-center">
+              <p class="text-lg font-semibold">
+                Friday Services from <br />9:30am to 12pm
+              </p>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.8438 9.11719C18.4948 9.60547 18.4948 10.3984 17.8438 10.8867L7.84375 18.3867C7.19271 18.875 6.13542 18.875 5.48438 18.3867C4.83333 17.8984 4.83333 17.1055 5.48438 16.6172L14.3073 10L5.48958 3.38281C4.83854 2.89453 4.83854 2.10156 5.48958 1.61328C6.14062 1.125 7.19792 1.125 7.84896 1.61328L17.849 9.11328L17.8438 9.11719Z"
+                  fill="#FFFCFC"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex flex-col bg-meeting-sunday rounded-lg justify-between text-white p-6 h-[380px] w-[480px] lg:w-1/3 bg-cover bg-no-repeat bg-center"
+          >
+            <h2 class="text-3xl font-bold">Sundays</h2>
+            <div class="flex justify-between items-center">
+              <p class="text-lg font-semibold">
+                Sunday Services from <br />9:30am to 12pm
+              </p>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.8438 9.11719C18.4948 9.60547 18.4948 10.3984 17.8438 10.8867L7.84375 18.3867C7.19271 18.875 6.13542 18.875 5.48438 18.3867C4.83333 17.8984 4.83333 17.1055 5.48438 16.6172L14.3073 10L5.48958 3.38281C4.83854 2.89453 4.83854 2.10156 5.48958 1.61328C6.14062 1.125 7.19792 1.125 7.84896 1.61328L17.849 9.11328L17.8438 9.11719Z"
+                  fill="#FFFCFC"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brief History -->
+    <section>
+      <div
+        class="flex flex-col lg:flex-row mt-10 lg:items-center bg-purple lg:mx-20 rounded"
+      >
+        <!-- About Us -->
+        <div class="text-white h-[200px] lg:h-auto lg:w-4/12">
+          <div class="flex justify-center items-center h-[200px] lg:h-auto">
+            <h2 class="text-4xl font-bold hidden lg:block">
+              About <br />
+              Us
+            </h2>
+            <h2 class="text-4xl font-bold lg:hidden">About Us</h2>
+          </div>
+        </div>
+        <!-- History with Background Image -->
+        <div class="bg-history-bg bg-cover bg-no-repeat lg:w-8/12 pb-6 pt-6">
+          <div
+            class="flex flex-col px-10 lg:px-32 space-y-14 text-white lg:max-w-[1000px]"
+          >
+            <h1 class="text-4xl mt-4 font-semibold capitalize">
+              Brief History
+            </h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+              aut sint assumenda labore consectetur voluptates unde, ab
+              consequatur iste molestiae laudantium voluptas numquam ad error
+              amet doloribus magnam ullam cumque velit impedit beatae. Modi
+              officia fugiat debitis dolorum tempore beatae?Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Harum aut sint assumenda
+              labore consectetur voluptates unde, ab consequatur iste molestiae
+              laudantium voluptas numquam ad error amet doloribus magnam ullam
+              cumque velit impedit beatae. Modi officia fugiat debitis dolorum
+              tempore beatae?
+            </p>
+            <a href="" class="underline font-bold">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="mt-10">
+      <div class="lg:mx-20">
+        <!-- Upcoming Events Heading & Line -->
+        <div class="flex flex-col items-center mt-6 space-y-2">
+          <h1 class="text-4xl text-purple font-bold">Upcoming Events</h1>
+          <div class="bg-purple w-[150px] h-[5px]"></div>
+        </div>
+
+        <!-- Cards -->
+        <div class="flex flex-col lg:flex-row">
+          <!-- Card 1 -->
+          <div class="flex flex-col mt-10 mx-2 space-y-2 lg:w-1/3">
+            <div class="border-2 border-gold rounded-lg">
+              <img
+                src="/img/adam-bixby-AMzEuMceqXE-unsplash.png"
+                alt="trip image"
+              />
+            </div>
+            <h6 class="text-[#5B5B5B] text-center text-2xl">
+              YOUTH TRIP TO MULANJE MOUNTAIN
+            </h6>
+            <p class="text-center font-semibold">2 NOVEMBER, 2022</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col mt-10 mx-2 space-y-2 lg:w-1/3">
+            <div class="border-2 border-gold rounded-lg">
+              <img
+                src="/img/jonathan-borba-Z39a7lqZusU-unsplash.png"
+                alt="trip image"
+              />
+            </div>
+            <h6 class="text-[#5B5B5B] text-center text-2xl uppercase">
+              Family Day
+            </h6>
+            <p class="text-center font-semibold">2 NOVEMBER, 2022</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex flex-col mt-10 mx-2 space-y-2 lg:w-1/3">
+            <div class="border-2 border-gold rounded-lg">
+              <img
+                src="/img/indonesia-bertauhid-ocEpT2tKX5c-unsplash.png"
+                alt="trip image"
+              />
+            </div>
+            <h6 class="text-[#5B5B5B] text-center text-2xl uppercase">
+              IN DEPTH BIBLE STUDY
+            </h6>
+            <p class="text-center font-semibold">2 NOVEMBER, 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Single Sermon -->
+    <section class="mt-10">
+      <div
+        class="flex flex-col lg:flex-row-reverse mt-10 lg:items-center bg-[rgba(0,0,0,0.9)] lg:mx-20"
+      >
+        <!-- About Us -->
+        <div class="text-white h-[200px] lg:h-auto lg:w-4/12">
+          <div class="flex justify-center items-center h-[200px] lg:h-auto">
+            <h2 class="text-4xl uppercase hidden lg:block">
+              Latests <br />
+              Sermon
+            </h2>
+            <h2 class="text-4xl uppercase lg:hidden">Latest Sermon</h2>
+          </div>
+        </div>
+        <!-- History with Background Image -->
+        <div class="bg-history-bg bg-cover bg-no-repeat lg:w-8/12 pb-6 pt-6">
+          <div
+            class="flex flex-col px-10 lg:px-32 space-y-14 text-gray-200 lg:max-w-[1000px]"
+          >
+            <h1 class="text-4xl mt-4 font-semibold uppercase">
+              Last Days Events - Pastor Ian kachitsa
+            </h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+              aut sint assumenda labore consectetur voluptates unde, ab
+              consequatur iste molestiae laudantium voluptas numquam ad error
+              amet doloribus magnam ullam cumque velit impedit beatae. Modi
+              officia fugiat debitis dolorum tempore beatae?Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Harum aut sint assumenda
+              labore consectetur voluptates unde, ab consequatur iste molestiae
+              laudantium voluptas numquam ad error amet doloribus magnam ullam
+              cumque velit impedit beatae. Modi officia fugiat debitis dolorum
+              tempore beatae?
+            </p>
+            <a
+              href=""
+              class="flex space-x-5 bg-black text-white px-4 py-2 lg:px-5 lg:py-3 mt-8 w-[255px]"
+              ><span class="text-lg">Watch Full Sermons</span
+              ><svg
+                width="30"
+                height="30"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 1.5625C6.45996 1.5625 1.5625 6.45996 1.5625 12.5C1.5625 18.54 6.45996 23.4375 12.5 23.4375C18.54 23.4375 23.4375 18.54 23.4375 12.5C23.4375 6.45996 18.54 1.5625 12.5 1.5625ZM16.0181 12.6685L10.686 16.5479C10.6568 16.5689 10.6223 16.5814 10.5865 16.5841C10.5506 16.5868 10.5146 16.5795 10.4826 16.5631C10.4505 16.5467 10.4236 16.5218 10.4048 16.4911C10.386 16.4604 10.376 16.4252 10.376 16.3892V8.63525C10.3759 8.59919 10.3857 8.56379 10.4045 8.53299C10.4233 8.50219 10.4502 8.47718 10.4823 8.46075C10.5144 8.44432 10.5504 8.4371 10.5864 8.43989C10.6224 8.44268 10.6568 8.45537 10.686 8.47656L16.0181 12.3535C16.0433 12.3713 16.0638 12.3949 16.078 12.4223C16.0922 12.4497 16.0996 12.4801 16.0996 12.511C16.0996 12.5418 16.0922 12.5722 16.078 12.5996C16.0638 12.627 16.0433 12.6506 16.0181 12.6685Z"
+                  fill="white"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="mt-10">
+      <div class="lg:mx-20">
+        <!-- Latests News Headlines -->
+        <div class="flex flex-col items-center mt-6 space-y-2">
+          <h1 class="text-4xl font-bold">Latest News</h1>
+          <div class="bg-black w-[100px] h-[5px]"></div>
+        </div>
+
+        <!-- Cards -->
+        <div class="flex flex-col lg:flex-row">
+          <!-- Card 1 -->
+          <div class="flex flex-col mt-10 mx-2 space-y-2 lg:w-1/3">
+            <img
+              src="/img/john-price-RAZQiZOX3mU-unsplash.jpg"
+              alt="trip image"
+              class="lg:h-[370px] border-[3px] border-gray-900"
+            />
+            <h6 class="text-[#5B5B5B] text-lg font-semibold">
+              First Post Title
+            </h6>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col mt-10 mx-2 space-y-2 lg:w-1/3">
+            <img
+              src="/img/rhys-kentish-EC4T7d3QnlQ-unsplash.jpg"
+              alt="trip image"
+              class="lg:h-[370px] border-[3px] border-gray-900"
+            />
+            <h6 class="text-[#5B5B5B] text-lg font-semibold">
+              Second Post Title
+            </h6>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex flex-col mt-10 mx-2 space-y-2 lg:w-1/3">
+            <img
+              src="/img/antoine-pluss-MsKv6HCQ0F0-unsplash.jpg"
+              alt="trip image"
+              class="lg:h-[370px] border-[3px] border-gray-900"
+            />
+            <h6 class="text-[#5B5B5B] text-lg font-semibold">
+              Third Post Title
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Location -->
+    <section class="mt-10">
+      <div class="lg:mx-20">
+        <!-- Our Location -->
+        <div class="flex flex-col items-center mt-6 space-y-2">
+          <h1 class="text-4xl font-bold">Our Location in Mzuzu</h1>
+          <div class="bg-black w-[150px] h-[5px]"></div>
+        </div>
+
+        <!-- Google Map -->
+        <iframe
+          class="mt-10"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.4049837628836!2d34.01836296540138!3d-11.450666991866163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x191d3a7e3dcb2031%3A0xddef11f55a7d52f7!2sMzilawayingwe%2C%20Mzuzu!5e0!3m2!1sen!2smw!4v1666488622951!5m2!1sen!2smw"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="bg-purple mt-4 text-white">
+      <div class="container pt-16 pb-6 lg:mx-auto">
+        <img
+          src="/img/logo-removebg-preview.png"
+          class="lg:mx-auto w-[150px]"
+          alt="logo"
+        />
+
+        <!-- Other Details -->
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between py-6 px-10 space-y-5 lg:space-y-0"
+        >
+          <!-- Sitemap -->
+          <div class="text-center lg:text-start">
+            <ul class="flex flex-col text-white space-y-2">
+              <li><a class="underline" href="">Home</a></li>
+              <li><a class="underline" href="">About Us</a></li>
+              <li><a class="underline" href="">Contact Us</a></li>
+              <li><a class="underline" href="">Sermons</a></li>
+            </ul>
+          </div>
+          <!-- Email Address & Postal -->
+          <div class="text-center lg:text-center">
+            <p>Post Office Box 12, Mzuzu</p>
+            <p>cityofeternity@gmail.com</p>
+          </div>
+          <!-- Social Media & Phonenumber -->
+          <div class="text-center lg:text-start space-y-2">
+            <div class="flex space-x-4 justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="w-5 h-5"
+              >
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                  fill="white"
+                />
+              </svg>
+              <span>+265 880 135 624</span>
+            </div>
+            <div class="flex space-x-4 justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                class="w-5 h-5"
+              >
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  fill="white"
+                />
+              </svg>
+              <span>City of Eternity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-10">
+          <p class="text-center">&#169; 2022 All Rights Reserverd</p>
+        </div>
+      </div>
+    </footer>
+
+     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+     <!-- Magnific Popup core JS file -->
+     <script src="/magnific-popup/jquery.magnific-popup.min.js"></script>
+  </body>
+</html>

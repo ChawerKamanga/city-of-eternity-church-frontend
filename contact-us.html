@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Of Eternity</title>
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="/src/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="bg-purple">
+    <div class="flex justify-between items-center lg:mx-20">
+      <!-- img -->
+      <div class="p-6 z-50">
+        <a href="/index.html"
+          ><img
+            src="/img/logo-removebg-preview.png"
+            class="h-[50px]"
+            alt="logo"
+        /></a>
+      </div>
+
+      <!-- nav items -->
+      <div class="lg:flex space-x-10 items-center hidden">
+        <ul class="flex space-x-4 text-white">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/sermons.html">Sermons</a></li>
+          <li><a href="/about-us.html">About Us</a></li>
+          <li><a href="/contact-us.html">Contact Us</a></li>
+        </ul>
+        <a href="" class="bg-white px-4 py-2 rounded-md">Join Us</a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="lg:hidden mr-10">
+        <button
+          id="menu-btn"
+          type="button"
+          class="z-40 block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Nav Menu -->
+      <div
+        id="menu"
+        class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-purple"
+      >
+        <a href="/index.html" class="hover:text-blue-500">Home</a>
+        <a href="/sermons.html" class="hover:text-blue-500">Sermons</a>
+        <a href="/about-us.html" class="hover:text-blue-500">About Us</a>
+        <a href="/contact-us.html" class="hover:text-blue-500">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <section class="bg-sermons-hero">
+    <div class="sermons-bg">
+    <div class="container mx-auto flex items-center h-[50vh] px-10">
+      <h1 class="text-white font-bold text-5xl lg:text-[4.5rem]">
+        Contact Us
+      </h1>
+    </div>
+    </div>
+  </section>
+
+  <section class="mt-10">
+    <div class="mx-auto max-w-[1900px] py-2">
+      <h1 class="text-3xl font-bold lg:text-4xl">Get in touch</h1>
+      <div class="flex flex-col lg:flex-row mt-5 space-y-16 lg:space-y-0 lg:space-x-14 lg:mt-20">
+        <!-- Send a Message & form -->
+        <div class="lg:w-2/3 lg:border-r lg:border-r-gray-300 lg:pr-10">
+          <h2 class="text-2xl font-semibold text-gray-600">Send a message</h2>
+          <p class="text-gray-500 mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat rerum
+            consectetur mollitia cumque eaque voluptatem doloremque! mollitia cumque eaque voluptatem doloremque!</p>
+          <div class="flex flex-col space-y-5 lg:space-y-10 mt-5">
+            <!-- First Row for Input -->
+            <div class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
+              <div class="flex flex-col lg:w-1/2">
+                <label class="text-lg" for="name">Name</label>
+                <input type="text" name="name" id="name" class="py-2 border-gray-800 border-b-2 ring-0 outline-none">
+              </div>
+              <div class="flex flex-col lg:w-1/2">
+                <label class="text-lg" for="email">Email</label>
+                <input type="email" name="email" id="email" class="py-2 border-gray-800 border-b-2 ring-0 outline-none">
+              </div>
+            </div>
+            <!-- Second Row for Input -->
+            <div class="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
+              <div class="flex flex-col lg:w-1/2">
+                <div class="flex flex-col">
+                  <label class="text-lg" for="location">Location</label>
+                  <input type="text" name="location" id="location"
+                    class="py-4 border-gray-800 border-b-2 ring-0 outline-none">
+                </div>
+              </div>
+              <div class="flex flex-col lg:w-1/2">
+                <div class="flex flex-col">
+                  <label class="text-lg" for="phonenumber">Phonenumber</label>
+                <input type="text" name="phonenumber" id="phonenumber"
+                  class="py-4 border-gray-800 border-b-2 ring-0 outline-none">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call US Whatsapp etc -->
+        <div class="space-y-14 lg:w-1/3">
+          <div class="space-y-4">
+            <h1 class="text-2xl font-semibold text-gray-600">Call Us</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="flex space-x-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.77189 2.43899L8.84789 2.09499C9.85689 1.77299 10.9349 2.29399 11.3669 3.31199L12.2269 5.33999C12.6009 6.22299 12.3929 7.26199 11.7129 7.90799L9.81789 9.70599C9.93489 10.782 10.2969 11.841 10.9029 12.883C11.4784 13.8911 12.2503 14.7735 13.1729 15.478L15.4489 14.718C16.3109 14.431 17.2509 14.762 17.7789 15.539L19.0119 17.349C19.6269 18.253 19.5159 19.499 18.7529 20.265L17.9359 21.086C17.1219 21.903 15.9589 22.2 14.8839 21.864C12.3439 21.072 10.0109 18.721 7.88089 14.811C5.74789 10.895 4.99489 7.57099 5.62289 4.84299C5.88689 3.69499 6.70389 2.77999 7.77189 2.43899Z"
+                  fill="black" />
+              </svg>
+              <span>+265 880 135 624</span>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h1 class="text-2xl font-semibold text-gray-600">Whatsapp</h1>
+            <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="flex space-x-4">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+              </svg>
+              <span>+265 880 135 624</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- Our Location -->
+  <section class="mt-10 lg:mt-20">
+    <!-- Google Map -->
+    <iframe class="mt-10"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.4049837628836!2d34.01836296540138!3d-11.450666991866163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x191d3a7e3dcb2031%3A0xddef11f55a7d52f7!2sMzilawayingwe%2C%20Mzuzu!5e0!3m2!1sen!2smw!4v1666488622951!5m2!1sen!2smw"
+      width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer class="bg-purple mt-4 text-white">
+    <div class="container pt-16 pb-6 lg:mx-auto">
+      <img
+        src="/img/logo-removebg-preview.png"
+        class="lg:mx-auto w-[150px]"
+        alt="logo"
+      />
+
+      <!-- Other Details -->
+      <div class="flex flex-col lg:flex-row lg:justify-between py-6 px-10 space-y-5 lg:space-y-0">
+        <!-- Sitemap -->
+        <div class="text-center lg:text-start">
+          <ul class="flex flex-col text-white space-y-2">
+            <li><a class="underline" href="">Home</a></li>
+            <li><a class="underline" href="">About Us</a></li>
+            <li><a class="underline" href="">Contact Us</a></li>
+            <li><a class="underline" href="">Sermons</a></li>
+          </ul>
+        </div>
+        <!-- Email Address & Postal -->
+        <div class="text-center lg:text-center">
+          <p>Post Office Box 12, Mzuzu</p>
+          <p>cityofeternity@gmail.com</p>
+        </div>
+        <!-- Social Media & Phonenumber -->
+        <div class="text-center lg:text-start space-y-2">
+          <div class="flex space-x-4 justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="w-5 h-5"
+            >
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                fill="white"
+              />
+            </svg>
+            <span>+265 880 135 624</span>
+          </div>
+          <div class="flex space-x-4 justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              class="w-5 h-5"
+            >
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                fill="white"
+              />
+            </svg>
+            <span>City of Eternity</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-10">
+        <p class="text-center">&#169; 2022 All Rights Reserverd</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
